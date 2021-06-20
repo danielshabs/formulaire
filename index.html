@@ -6,10 +6,45 @@
     <title>formulaire</title>
 </head>
 <body>
+    <form action="page2.html" method="post">
+        <p>
+            <label for="nom">Nom</label> <input type="text" name="nom" id="nom" placeholder="votre nom..."><br><br>
 
-    <p>
-        debut de mon formulaire
-    </p>
+        <label for="nom">Prenom</label>  <input type="text" name="prenom" id="prenom" placeholder="votre prenom..."><br><br>
+        
+        <label for="date">Mot de passe</label> <input type="date" name="date" id="date"><br><br>
+
+        Votre genre <br>
+        <input type="radio" name="genre" value="masc" id="masc"> <label for="masc">Masculin</label><br>
+        <input type="radio" name="genre" value="fem" id="fem"> <label for="fem">Feminin</label><br>
+
+        Etat civil <br>
+        <input type="radio" name="Etatc" value="marie" id="marie"> <label for="marie">Marié</label><br>
+        <input type="radio" name="Etatc" value="celib" id="celib"> <label for="celib">Celibataire</label><br>
+
+        <label for="pays">Votre Pays</label><br>
+        <select name="pays" id="pays">
+        <option value="rdc">RDC</option>
+        <option value="canda">Canada</option>
+        <option value="maroc">Maroc</option>
+        <option value="angola">Angola</option>
+        <option value="chine">Chine</option>
+    </select><br><br>
+    <label for="motivation">Votre texte de motivation</label><br>
+    <textarea name="motivation" id="motivation" cols="30" rows="10"></textarea><br><br>
+
+
+
+    
+        <input type="submit" name="Vaider" value="Vaider">
+        <input type="reset" name="Annuler" value="Annuler">
+
+        </p>
+        
+
+        
+    </form>
+       
     
 </body>
 </html>
