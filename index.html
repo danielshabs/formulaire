@@ -2,56 +2,60 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    
     <title>formulaire</title>
 </head>
 <body>
     <form action="#" method="post">
-        <p>
-            <label for="nom">Nom</label> <input type="text" name="nom" id="nom" placeholder="votre nom..."><br><br>
-
-        <label for="Prenom">Prenom</label>  <input type="text" name="prenom" id="prenom" placeholder="votre prenom..."><br><br>
-        
-        <label for="date">Date</label> <input type="date" name="date" id="date"><br><br>
-
-        photo passeport <br>
-        <input type="file" name="file" id="input-file"> <br><br>
-
-  <label>Accepter de recevoir des notification?</label>  <br>
-        <input type="checkbox" name="oui" id="oui"><br>
-
-
-       <label>Votre genre</label>  <br>
-        <input type="radio" name="genre" value="masc" id="masc"> <label for="masc">Masculin</label><br>
-        <input type="radio" name="genre" value="fem" id="fem"> <label for="fem">Feminin</label><br>
-
-       <label></label> Etat civil <br>
-        <input type="radio" name="Etatc" value="marie" id="marie"> <label for="marie">Marié</label><br>
-        <input type="radio" name="Etatc" value="celib" id="celib"> <label for="celib">Celibataire</label><br>
-
-        <label for="pays">Votre Pays</label><br>
-        <select name="pays" id="pays">
-        <option value="rdc">RDC</option>
-        <option value="canda">Canada</option>
-        <option value="maroc">Maroc</option>
-        <option value="angola">Angola</option>
-        <option value="chine">Chine</option>
-    </select><br><br>
-    <label for="motivation">Votre texte de motivation</label><br>
-    <textarea name="motivation" id="motivation" cols="30" rows="10"></textarea><br><br>
-
-
-
-    
-        <input type="submit" name="Vaider" value="Vaider">
-        <input type="reset" name="Annuler" value="Annuler">
-
-        </p>
-        
-
-        
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom">
+        </div>
+        <div>
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom">
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"><br><br>
+        </div>
+        <div>
+            <label for="input-file">photo passeport</label>
+            <input type="file" name="photopasseport" id="input-file">
+        </div>
+        <div>
+            <label for="notificaion">Accepter de recevoir des notification?</label>
+            <input type="checkbox" name="notificaion" id="notificaion"><br>
+        </div>
+        <div>
+            <label>Votre genre</label>  <br>
+            <input type="radio" name="genre" value="masculin" id="masculin"> <label for="masculin">Masculin</label>
+            <input type="radio" name="genre" value="feminin" id="feminin"> <label for="feminin">Feminin</label>
+        </div>
+        <div>
+            <label>Etat civil</label>  
+            <input type="radio" name="etatcivil" value="marié" id="marié">
+            <label for="marié">Marié</label>
+            <input type="radio" name="etatcivil" value="celibataire" id="celibataire">
+            <label for="celibataire">Celibataire</label>
+        </div>
+        <div>
+            <label for="pays">Votre Pays</label><br>
+            <select name="pays" id="pays">
+                <option value="rdc">RDC</option>
+                <option value="canda">Canada</option>
+                <option value="maroc">Maroc</option>
+                <option value="angola">Angola</option>
+                <option value="chine">Chine</option>
+            </select>
+        </div>
+        <div>
+            <label for="motivation">Votre texte de motivation</label><br>
+            <textarea name="motivation" id="motivation" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="submit" name="Vaider" value="Vaider">
+            <input type="reset" name="Annuler" value="Annuler">     
+        </div>
     </form>
-       
-    
 </body>
 </html>
